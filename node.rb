@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# class for each node/vertex in the graph
 class Node
   attr_accessor :steps, :predecessor, :neighbors
   attr_reader :coordinates

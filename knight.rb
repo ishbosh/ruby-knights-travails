@@ -1,3 +1,8 @@
+# frozen_string_literal: true
+
+require_relative 'node'
+
+# Holds the logic for the knight_moves
 class Knight
   attr_reader :moves
 
@@ -29,14 +34,13 @@ class Knight
   end
 
   def add_neighbors_to_queue
-    @current_node.neighbors.each do |neighbor| 
+    @current_node.neighbors.each do |neighbor|
       if neighbor.steps.nil?
         enqueue(neighbor)
         neighbor.predecessor = @current_node
         neighbor.steps = neighbor.predecessor.steps + 1
       end
       return @current_node = neighbor if at_end?
-
     end
   end
 
@@ -63,7 +67,7 @@ class Knight
       path << node.predecessor.coordinates
       node = node.predecessor
     end
-    path.reverse.each { |node| p node }
+    path.reverse.each { |coordinate| p coordinate }
     p @current_node.coordinates # print the end node last
   end
 end
