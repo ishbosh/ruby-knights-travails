@@ -2,6 +2,7 @@
 
 require_relative 'knight'
 
+# Driver script to run knight_moves
 knight = Knight.new
 knight.knight_moves([3, 3], [0, 0])
 knight.knight_moves([3, 3], [6, 7])
