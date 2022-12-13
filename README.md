@@ -1,6 +1,11 @@
 # ruby-knights-travails
 Knights Travails project in Ruby, assignment from The Odin Project
 
+This one took me a while to wrap my head around, but I was able to figure it out 
+after a while of trying different ideas. I tried to design it so that it will
+be flexible to be used with other pieces in the future, but I'm not sure how
+that worked out yet.
+
 ASSIGNMENT:
 
 On a standard 8x8 chess board, a knight can move to any square from any other square,
