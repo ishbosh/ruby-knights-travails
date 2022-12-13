@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'knight'
+require_relative 'lib/knight'
 
 # Driver script to run knight_moves
 knight = Knight.new
